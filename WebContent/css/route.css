@@ -1,0 +1,155 @@
+body{
+font-family: 
+	"Microsoft YaHei", Arial, sans-serif;
+}
+*{margin:0;padding:0;list-style-type:none;}
+a{blr:expression(this.onFocus=this.blur())}
+:focus{outline:0;}
+a{cursor: pointer;
+}
+button{outline:none;border:0;}
+a,img{border:0;}
+span,i{
+	display: inline-block;
+}
+section{
+	clear: both;
+}
+.route{	
+	clear: both;
+	font-size: 14px;
+	color: #333;
+	line-height: 24px;
+	height: 24px;
+}
+.linearea{
+	padding: 10px;
+}
+.left{
+	width: 100px;
+	height: 20px;
+	font-size: 13px;
+}
+.place{
+	position: relative;
+	display: inline-block;
+	padding-left: 20px;
+}
+.place:after{
+	position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #FFF;
+    content: '';
+    top: 5px;
+    left: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #555;
+}
+
+.line{
+	display: inline-block;
+	border-left: 6px solid #FFF;
+	padding: 10px;
+	margin-left: 3px;
+	font-size: 12px;
+	color: #777;
+	max-width: 65%;
+}
+.base{
+	height: 20px;
+	line-height: 20px;
+}
+.base i{
+	margin: 0px 0px 0 3px;
+}
+.line ul{
+	margin-top: 5px;
+	display: none;
+
+}
+.line ul li{
+	line-height: 24px;
+
+}
+.bus,.walk,.subway{
+	position: relative;
+	margin: -6px 0 -6px 0;
+}
+.bus .left i,.walk  .left i,.subway  .left i{
+	position: absolute;
+	top: 13px;
+	left: 20px;
+}
+.bus .line{
+	border-left: 6px solid #39F;
+}
+
+.subway .line{
+	border-left: 6px solid #C55;
+}
+.walk .line{
+	border-left: 4px dashed #999;
+	margin-left: 4px;
+}
+.subname{
+	padding: 0px 6px;
+	background-color: #C55;
+	color: #FFF;
+	margin-right: 5px;
+}
+.busname{
+	padding: 0px 6px;
+	background-color: #39F;
+	color: #FFF;
+	margin-right: 5px;
+}
+.icondown{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url("../img/arrow_down.png") no-repeat center center;
+	background-size: 10px 7px;
+}
+.iconup{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url("../img/arrow_up.png") no-repeat center center;
+	background-size: 10px 7px;
+}
+.iconsubway{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url("../img/subway.png") no-repeat center center;
+}
+.icon{
+    position: relative;      
+    background: url("../img/route.png") no-repeat;
+    top: 2px;
+}
+.i_bus{
+	width: 13px;
+    height: 15px;
+    background-position: 0 -34px;   
+}
+.i_walk{
+	width: 15px;
+    height: 17px;
+    background-position: 0 -100px;
+    top: 3px;
+}
+.i_dirve{
+	width: 15px;
+    height: 14px;
+    background-position: 0 -68px;
+}
+.i_bike{
+	    width: 18px;
+    height: 15px;
+    background-position: 0 -138px;
+    top: 3px;
+}

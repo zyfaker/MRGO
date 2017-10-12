@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 根据model对象来更新表结构 -->
+
+		<property name="hibernate.jdbc.batch_size">50</property>
+		<property name="hiberante.cache.use_second_level_cache">false</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+		<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="connection.url">jdbc:sqlserver://115.28.84.206:1433;databaseName=NEV_DATABASE</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password">@qazq1234</property>
+
+
+		<property name="hibernate.c3p0.max_size">200</property>
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.timeout">5000</property>
+		<property name="hibernate.c3p0.max_statements">10000</property>
+		<property name="hibernate.c3p0.idle_test_period">3000</property>
+		<property name="hibernate.c3p0.acquire_increment">2</property>
+		<property name="hibernate.c3p0.validate">true</property>
+
+		
+	</session-factory>
+</hibernate-configuration>

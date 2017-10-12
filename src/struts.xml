@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 配置为开发模式，一旦文件改动，不需要重启，会立即生效 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 指定Web应用的默认编码集，相当于调用HttpServletRequest的setCharacterEncoding方法 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 该设置浏览器是否缓存静态内容，默认值是true(生产环境下使用)，开发阶段关闭 -->
+	<constant name="struts.serve.static.brovserCache" value="false" />
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+
+	<!-- 可以打印出更详细的错误信息 -->
+	<constant name="struts.devMode" value="true" />
+
+	<!-- 默认的视图主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+
+	<!-- action类由Spring负责创建 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- action 包 -->
+	<package name="default" namespace="/" extends="json-default">
+
+		<action name="mrgo" class="TestAction">
+			<result type="json">
+				<param name="root">responseJson</param>
+			</result>
+		</action>
+	</package>
+</struts>
